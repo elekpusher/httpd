@@ -8,9 +8,6 @@ RUN yum -y update && yum clean all && \
 yum -y install httpd && \ 
 yum -y install net-tools && yum clean all
 
-FROM centos
-MAINTAINER Oriol Boan <dev@orboan.com>
-
 EXPOSE 80
 
 ADD run-httpd.sh /run-httpd.sh
