@@ -1,6 +1,10 @@
-FROM centos:latest
+FROM centos
 
 MAINTAINER Jesús Marín Transvaal "robbiemay501@gmail.com"
+LABEL Vendor="CentOS"
+LABEL License=GPLv2
+
+
 
 RUN yum -y update && yum clean all && \
 yum -y install httpd && \ 
