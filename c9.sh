@@ -7,4 +7,4 @@ if [ "$1" == "stop" ]; then
 docker rm -f cloud9
 exit 0
 fi
-echo "Usage: httpd [start|stop]"
+echo "Usage: elekpusher/httpd [start|stop]"
