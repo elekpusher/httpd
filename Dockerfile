@@ -13,8 +13,10 @@ yum -y install net-tools && yum clean all
 EXPOSE 80
 
 ADD run-httpd.sh /run-httpd.sh
+ADD run-c9.sh /run-c9.sh
 RUN chmod -v +x /run-httpd.sh
 
 CMD ["/run-httpd.sh"]
+CMD ["/run-c9.sh"]
 
 
